@@ -16,6 +16,10 @@ export default function LoginScreen({navigation}) {
     navigation.navigate('Projetos');
   }
 
+  const navigateToNewUser = () =>{
+    navigation.navigate('Cadastro');
+  }
+
   return (
     <View style={styles.container}>
 
@@ -42,6 +46,10 @@ export default function LoginScreen({navigation}) {
       <TouchableOpacity style={styles.button} onPress={navigateToMyProj}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
+
+      <View style={{margin:15}}>
+      <Text style={styles.buttonText}>Não tem uma conta? <TouchableOpacity onPress={navigateToNewUser}>Cadastre-se</TouchableOpacity></Text>
+      </View>
     </View>
   );
 }
