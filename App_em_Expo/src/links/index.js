@@ -1,6 +1,6 @@
 const links ={
-    logo :'https://upload.wikimedia.org/wikipedia/commons/a/ad/Collaborate_icon_from_Noun_Project.png',
-    cadastroIcons:'https://freesvg.org/img/abstract-user-flat-4.png',
-    projetoExemplo:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRD3ZM4y0dlr8yF_6EFfyhO51T7Z08619Oe4j5j4AAxAAVuX-OzG3Tfawua9v6MgsWywII&usqp=CAU'
+    logo :'https://media.discordapp.net/attachments/1072921930904113172/1076602311931080814/Meu_projeto.png',
+    cadastroIcons:'https://media.discordapp.net/attachments/1072921930904113172/1076602311931080814/Meu_projeto.png',
+    projetoExemplo:'https://media.discordapp.net/attachments/1072921930904113172/1076604368142475294/paulo_Js_project_grapic_icon_in_flat_style_with_orange_yellow_a_c8e23649-56d2-4b5a-a29f-15d59505c9d5.png?width=494&height=494'
 };
 export default links;

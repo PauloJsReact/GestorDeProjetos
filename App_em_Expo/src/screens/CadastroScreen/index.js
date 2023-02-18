@@ -4,7 +4,7 @@ import { View, TextInput, Image, TouchableOpacity, Text } from 'react-native';
 import styles from '../../Styles';
 import links from '../../links';
 
-export default function CadastroScreen() {
+export default function CadastroScreen({navigation}) {
   const [nome, setNome] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
@@ -14,6 +14,9 @@ export default function CadastroScreen() {
     // implementar lógica de cadastro aqui
   };
 
+  const  NavegeParaMeusPoj = ()=>{
+    navigation.navigate('Home');
+  }
   return (
     <View style={styles.container}>
       <Image
@@ -46,7 +49,7 @@ export default function CadastroScreen() {
         value={confirmarSenha}
         onChangeText={setConfirmarSenha}
       />
-      <TouchableOpacity style={styles.button} onPress={handleCadastro}>
+      <TouchableOpacity style={styles.button} onPress={NavegeParaMeusPoj}>
         <Text style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
     </View>

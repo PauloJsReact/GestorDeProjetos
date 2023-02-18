@@ -4,13 +4,17 @@ import { View, TextInput, Image, TouchableOpacity, Text } from 'react-native';
 import styles from '../../Styles';
 import links from '../../links';
 
-export default function LoginScreen() {
+export default function LoginScreen({navigation}) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
     // implementar lógica de login aqui
   };
+
+  const navigateToMyProj = ()=>{
+    navigation.navigate('Projetos');
+  }
 
   return (
     <View style={styles.container}>
@@ -35,7 +39,7 @@ export default function LoginScreen() {
         value={password}
         onChangeText={setPassword}
       />
-      <TouchableOpacity style={styles.button} onPress={handleLogin}>
+      <TouchableOpacity style={styles.button} onPress={navigateToMyProj}>
         <Text style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
     </View>
